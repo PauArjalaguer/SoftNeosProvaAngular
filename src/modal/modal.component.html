@@ -1,0 +1,10 @@
+
+ <div *ngIf="modalOpen" class="modal" [ngStyle]="{ 'background-color': backgroundColor }">
+    <div class="modal-content">
+        <span class="close" (click)="closeModal()">&times;</span>
+        <h2>{{ title }}</h2>
+        <p >Total goes here: {{total}}</p>
+    </div>
+</div>
+
+

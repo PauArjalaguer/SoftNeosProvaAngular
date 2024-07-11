@@ -225,8 +225,15 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-      <h1>Hello, {{ title }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
+      <h1>Welcome to QA Frontend Test (SoftNeos)</h1>
+      <p>Congratulations! Your app  {{title }} is running. 🎉</p>
+
+      <!-- Botón para abrir el modal -->
+      <button (click)="openModal('Título modal ejemplo 1','Cuerpo modal ejemplo 1',null)">Open Modal</button>
+
+      <!-- Referencia al componente del modal -->
+      <app-modal [title]="modal_title" #modalComponent></app-modal>
+
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
@@ -320,6 +327,9 @@
           </svg>
         </a>
       </div>
+      <button (click)="openModal('Título modal ejemplo 2','Cuerpo modal ejemplo 2',null)">Open Modal 2</button>
+      <button (click)="openModal('Título modal ejemplo 3','Cuerpo modal ejemplo 3','yellowgreen')">Open Modal 3</button>
+   
     </div>
   </div>
 </main>
