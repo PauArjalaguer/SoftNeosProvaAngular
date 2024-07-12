@@ -32,13 +32,11 @@ export class ModalComponent {
 
   closeModal(): void {
     this.modalOpen = false;
-
   }
 
   total_sum(num1: number, num2: number): number {
     this.total = num1 + num2;
     return this.total;
-
   }
 
   changeBackgroundColorModal(color: string): void {
@@ -47,7 +45,6 @@ export class ModalComponent {
     } else {
       this.backgroundColor = color;
     }
-
   }
 }
 

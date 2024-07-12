@@ -17,7 +17,6 @@ export class AppComponent  {
   constructor() {
     this.title = "Titol";
     this.modal_title = "Titol modal";
-
   }
  
   openModal(modal_title: string, toggleColor: string | null): void {
