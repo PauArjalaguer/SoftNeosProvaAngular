@@ -229,7 +229,7 @@
       <p>Congratulations! Your app  {{title }} is running. 🎉</p>
 
       <!-- Botón para abrir el modal -->
-      <button (click)="openModal('Título modal ejemplo 1','Cuerpo modal ejemplo 1',null)">Open Modal</button>
+      <button (click)="openModal('Título modal ejemplo 1',null)">Open Modal</button>
 
       <!-- Referencia al componente del modal -->
       <app-modal [title]="modal_title" #modalComponent></app-modal>
@@ -327,8 +327,8 @@
           </svg>
         </a>
       </div>
-      <button (click)="openModal('Título modal ejemplo 2','Cuerpo modal ejemplo 2',null)">Open Modal 2</button>
-      <button (click)="openModal('Título modal ejemplo 3','Cuerpo modal ejemplo 3','yellowgreen')">Open Modal 3</button>
+      <button (click)="openModal('Título modal ejemplo 2',null)">Open Modal 2</button>
+      <button (click)="openModal('Título modal ejemplo 3','yellowgreen')">Open Modal 3</button>
    
     </div>
   </div>
